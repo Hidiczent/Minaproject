@@ -71,8 +71,7 @@
     <div
       class="mt-10 border-t border-gray-700 pt-4 text-xs text-gray-400 text-center"
     >
-      © 2025 บริษัท เจริญโภคภัณฑ์อาหาร จำกัด (มหาชน) | นโยบายความเป็นส่วนตัว |
-      ข้อกำหนดและเงื่อนไข
+      © 2023 Fresh Shop. All rights reserved. | Powered by CP Group
     </div>
   </footer>
 </template>

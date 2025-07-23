@@ -3,8 +3,10 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center gap-2">
-        <img src="../assets/Logo.jpg" alt="logo" class="w-20 h-20" />
-        <span class="text-xl font-semibold text-red-600">Fresh Shop ສາຂາດອນໜູນ</span>
+        <a href="/"><img src="../assets/Logo.jpg" alt="logo" class="w-20 h-20" /></a>
+        <a href="/" class="text-xl font-semibold text-red-600"
+          >Fresh Shop ສາຂາດອນໜູນ</a
+        >
       </div>
 
       <!-- Center Menu -->
@@ -142,11 +144,11 @@
         <div class="flex flex-wrap gap-2">
           <span
             v-for="tag in popularTags"
-            :key="tag"
+            :key="tag.id"
             class="bg-gray-100 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-red-100"
-            @click="handleSearchTag(tag)"
+            @click="goToProduct(tag.id)"
           >
-            {{ tag }}
+            {{ tag.name }}
           </span>
         </div>
       </div>

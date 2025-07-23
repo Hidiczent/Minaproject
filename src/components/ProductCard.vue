@@ -31,12 +31,12 @@
 
 <script setup>
 import { ref, watch } from "vue";
-import fallbackImage from "../assets/images/Chicken.jpg";
+import fallbackImage from "../assets/Logo.jpg";
 
 const props = defineProps({
   id: [String, Number],
   name: String,
-  image: String,
+  image: String, // เป็นรหัสสินค้า เช่น "800000084310"
   type: {
     type: String,
     default: "Uncategorized",
@@ -49,7 +49,7 @@ watch(
   () => props.image,
   (newImage) => {
     currentImage.value = newImage
-      ? `/images/${encodeURIComponent(newImage)}`
+      ? `http://127.0.0.1:5050${newImage}`
       : fallbackImage;
   },
   { immediate: true }
